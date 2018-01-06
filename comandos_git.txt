@@ -1,0 +1,82 @@
+1) Configurar Usuário:
+.Usuário: [git config --global user.name "seu.usuario"]
+.Email: [git config --global user.email "seu.email@rsvarejo.com.br"]
+
+2) Baixar Projeto:
+.Clonar um repositório remoto: [git clone http://192.168.0.202/admin.version/howto-git.git]
+.Clonar um repositório remoto informando a branch que deseja clonar: [git clone -b  develop  http://192.168.0.202/admin.version/howto-git.git]
+.Baixar um branch remoto para edição: [git checkout -b nome-branch-local origin/nome-branch-remota]
+
+3) Criar uma branch:
+.Criar um novo branch a partir do branch atual: [git branch nome_branch]
+.Criar um novo branch a partir do branch atual e mudar para ele ao mesmo tempo: [git checkout -b nome_branch]
+
+4) Enviando um branch para o repositório remoto:
+.[git push origin nome-do-branch]
+
+5) Adicionando arquivos para a staged area:
+.Adicionar um arquivo em específico: [git add meu_arquivo.txt]
+.Adicionar todos os arquivos/diretórios: [git add .]
+
+6) Comitando arquivos (repositório local):
+.Comitar um arquivo: [git commit meu_arquivo.txt]
+.Comitar vários arquivos: [git commit meu_arquivo.txt meu_outro_arquivo.txt]
+.Comitar informando mensagem: [git commit meuarquivo.txt -m "minha mensagem de commit"]	
+
+7) Comitando arquivos (repositório remoto):
+.[git push]
+
+8) UPDATE - Trazendo arquivos remotos para sua branch local:
+.[git pull origin nome-branch-local]
+.[git pull] - Atualizar os arquivos no branch atual
+-Executar git pull geralmente busca os dados do servidor de onde você fez o clone originalmente e automaticamente tenta fazer o merge dele no código que você está trabalhando atualmente.
+-O "git pull" recebe dois parâmetros, o repositório remoto que se quer fazer um "pull" e o branch local que receberá as alterações.
+
+9) Trocando de branch:
+.[git checkout nome-branch]
+
+10) Jogando o branch criado em outro branch:
+.[git merge nome_branch]
+-Obs.: O comando merge deve ser executado na branch que vai receber a atualização.
+Exemplo: Puxar atualizações da branch "sprint-1" para a branch "develop":
+	     Mudar para a branch develop           ---> [git checkout develop]
+	     Puxar atualizações da branch sprint-1 ---> [git merge sprint-1]
+		 
+11) Antes de fazer o merge das alterações, você pode também pré-visualizá-as usando:
+.[git diff <branch origem> <branch destino>]
+
+12) usar saídas do git coloridas
+.[git config color.ui true]
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Comandos Repositório Remoto
+	.Exibir os repositórios remotos:
+		.[git remote]
+		.[git remote -v]
+	.Exibir informações dos repositórios remotos: [git remote show origin]
+	.Verificando o histórico de commits: [git log]
+	.Verificando o que foi mudado, diferença entre um arquivo e outro: [git log -p]
+	.Vendo branchs remotos: [git branch -a]
+		
+	
+Comandos Repositório Local
+	.Verificar status do projeto: [git status]
+	.Verificando em que branch você está: [git branch]
+	.Excluir um branch: [git branch -d nome_branch]
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+	
+------------------------------------------------
+padrão de nome de branch:
+ git branch feature/sprint-1
+ git branch feature/sprint-1-consulta-cliente
+
+push (commit) - pull (update)
+
+https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge
+
+STOP: .2 Ramificação (Branching) no Git - Básico de Branch e Merge / Conflitos de Merge Básico
+
+
