@@ -1,2 +1,3 @@
 Arquivo criado remotamente na branch develop
 linha incluida localmente na branch develop
+nova linha incluida localmente na branch develop
