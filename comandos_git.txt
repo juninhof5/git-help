@@ -22,6 +22,7 @@
 .Comitar um arquivo: [git commit meu_arquivo.txt]
 .Comitar vários arquivos: [git commit meu_arquivo.txt meu_outro_arquivo.txt]
 .Comitar informando mensagem: [git commit meuarquivo.txt -m "minha mensagem de commit"]	
+.Adicionar e Comitar informando mensagem: [git commit -a -m 'adicionei um novo rodapé [issue 53]']
 
 7) Comitando arquivos (repositório remoto):
 .[git push]
@@ -48,6 +49,10 @@ Exemplo: Puxar atualizações da branch "sprint-1" para a branch "develop":
 12) usar saídas do git coloridas
 .[git config color.ui true]
 
+13) excluir um branch
+.Apagar branch local:  [git branch -d nome_branch]
+.Apagar branch remoto: [git push origin :nome_branch]
+
 
 --------------------------------------------------------------------------------------------------------------------------------
 Comandos Repositório Remoto
@@ -63,7 +68,6 @@ Comandos Repositório Remoto
 Comandos Repositório Local
 	.Verificar status do projeto: [git status]
 	.Verificando em que branch você está: [git branch]
-	.Excluir um branch: [git branch -d nome_branch]
 --------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -75,8 +79,8 @@ padrão de nome de branch:
 
 push (commit) - pull (update)
 
-https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge
+https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Gerenciamento-de-Branches
 
-STOP: .2 Ramificação (Branching) no Git - Básico de Branch e Merge / Conflitos de Merge Básico
+STOP: .3 Ramificação (Branching) no Git - Gerenciamento de Branches
 
 
